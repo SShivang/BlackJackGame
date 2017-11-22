@@ -19,8 +19,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class BlackJack implements ActionListener {
-	ImageIcon image = new ImageIcon("D2.jpg");
-	JLabel label = new JLabel("", image, JLabel.CENTER);
+	
+	// instance variables 
+	
+	private ImageIcon image = new ImageIcon("D2.jpg");
+	private JLabel label = new JLabel("", image, JLabel.CENTER);
 	private static JButton hit = new JButton("Hit");
 	private static JButton stand = new JButton("Stand");
 	private static JPanel options = new JPanel();
@@ -28,16 +31,21 @@ public class BlackJack implements ActionListener {
 	private static JFrame window = new JFrame();
 	private static JPanel win = new JPanel(new BorderLayout());
 	private static JPanel panel = new JPanel(new FlowLayout());
-	static int tot = 0;
-	static int rounds = 0;
+	private static int tot = 0;
+	private static int rounds = 0;
 	private static JLabel Score = new JLabel("Score:" + tot);
 	private static JPanel dealer = new JPanel(new FlowLayout());
-	ImageIcon initial = new ImageIcon("D2.jpg");
-	JLabel a = new JLabel("", initial, JLabel.CENTER);
-	int index = 1;
-	ArrayList<Integer> card = new ArrayList();
-	boolean ace = false;
+	private ImageIcon initial = new ImageIcon("D2.jpg");
+	private JLabel a = new JLabel("", initial, JLabel.CENTER);
+	private int index = 1;
+	private ArrayList<Integer> card = new ArrayList();
+	private boolean ace = false;
 
+	/*
+
+	The constuctor for the blackjack class
+	*/
+	
 	public BlackJack() {
 
 		window.setSize(500, 500);
