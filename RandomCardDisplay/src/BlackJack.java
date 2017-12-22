@@ -43,7 +43,7 @@ public class BlackJack implements ActionListener {
 
 	/*
 
-	The constuctor for the blackjack class
+	The default constuctor for the blackjack class
 	*/
 	
 	public BlackJack() {
