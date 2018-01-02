@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 public class BlackJack implements ActionListener {
 	
-	// instance variables 
+	// instance variables for this class
 	
 	private ImageIcon image = new ImageIcon("D2.jpg");
 	private JLabel label = new JLabel("", image, JLabel.CENTER);
